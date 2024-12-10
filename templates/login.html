@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FARMACIA EMERGENTES II</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../static/external/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../static/external/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+  <link rel="stylesheet" type="text/css" href="../static/external/vendor/animate/animate.css">
+  <link rel="stylesheet" type="text/css" href="../static/external/vendor/css-hamburgers/hamburgers.min.css">
+  <link rel="stylesheet" type="text/css" href="../static/external/vendor/animsition/css/animsition.min.css">
+  <link rel="stylesheet" type="text/css" href="../static/external/vendor/select2/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="../static/external/vendor/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap/util.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap/main.css">
+
+	<link rel="icon" href="https://www.pngitem.com/pimgs/m/42-423728_pharmacy-medicine-doctor-medic-png-image-blue-pharmacy.png">
+
+</head>
+<body>
+
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('../static/images/260209.jpg');">
+			<div class="wrap-login100 p-t-30 p-b-50">
+				<span class="login100-form-title p-b-41">
+					INICIO DE SESI&Oacute;N
+				</span>
+				<form action="{{ url_for('controluser') }}" name="login" class="login100-form p-b-33 p-t-5" method="POST">
+					<div class="wrap-input100">
+						<input class="input100" type="text" name="nombre" placeholder="Nombre" required>
+					</div>
+					
+					<div class="wrap-input100">
+						<input class="input100" type="password" name="contrasena" placeholder="Contraseña" required>
+					</div>
+					
+					<br><br>
+					<div style="text-align: center;">
+						<a href="control.html" class="login100-form-btn">ACCEDER</a>
+					  </div>
+					  <br>
+					  <div style="text-align: center;">
+						<a href="register.html" class="login100-form-btn">REGISTRARSE</a>
+					  </div>
+				</form>
+				<script>
+					document.getElementById('loginButton').addEventListener('click', function(event) {
+						event.preventDefault();  // Evita la acción predeterminada del enlace
+						document.getElementById('loginForm').submit();  // Envía el formulario
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+	
+	<script src="..static/js/jquery-3.2.1.min.js"></script>
+	<script src="..static/js/popper.js"></script>
+	<script src="..static/js/bootstrap.min.js"></script>
+	<script src="..static/js/main.js"></script>
+	
+	<script type='text/javascript'>
+	document.oncontextmenu = function(){return false}
+	
+	document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 85 )) {
+            return false;
+        }
+};
+
+</script>
+
+</body>
+</html>
